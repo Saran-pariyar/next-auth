@@ -10,6 +10,7 @@ export default function UserInfo() {
   if (status === "authenticated") {
     return (
       <div className="shadow-xl p-8 rounded-md flex flex-col gap-3 bg-yellow-200">
+        {/* we have to add lh3.googleusercontent.com in next.config.js to make the image work  */}
         <Image
           className="rounded-full"
           src={session?.user?.image}
